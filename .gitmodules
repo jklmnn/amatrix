@@ -1,0 +1,3 @@
+[submodule "jwx"]
+	path = jwx
+	url = https://github.com/Componolit/jwx.git
