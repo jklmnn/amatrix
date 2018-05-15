@@ -17,12 +17,11 @@ private
 
    function Login (
                    User : String;
-                   Pass : String;
-                   Host : String
+                   Pass : String
                   ) return String;
 
-   Access_Token : String := Login(Username, Password, Homeserver);
-
-   Transaction_Id : Transaction_Type := 1;
+   function Image (
+                   Value : Transaction_Type
+                  ) return String;
 
 end Amatrix.Client;
