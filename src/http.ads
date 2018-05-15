@@ -7,7 +7,8 @@ package Http is
 
    function Put (
                  Url     : String;
-                 Content : String
+                 Content : String;
+                 Authentication : String
                 ) return String;
 
    function Post (
