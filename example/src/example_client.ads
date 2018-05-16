@@ -6,14 +6,4 @@ package Example_Client is
                                 Room : String
                                );
 
-private
-
-   function Get_Username (
-                          User : String
-                         ) return String;
-
-   function Get_Homeserver (
-                            User : String
-                           ) return String;
-
 end Example_Client;
