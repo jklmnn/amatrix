@@ -25,11 +25,11 @@ package body Amatrix.Client is
                                       & """type"": ""m.login.password"","
                                       & """user"": """ & Get_Username (User)
                                       & """}");
-      package Response_Object is new JWX.JSON (Response);
+      package Response_Object is new JWX.JSON (Response'Length);
       M        : Response_Object.Match_Type;
    begin
       Set_Homeserver (Hs);
-      Response_Object.Parse (M);
+      Response_Object.Parse (Response, M);
       Set_Access_Token (Response_Object.Get_String (Response_Object.Query_Object ("access_token")));
    end Login;
 
